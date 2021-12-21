@@ -1,0 +1,217 @@
+/*
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    text-align: center;
+}
+
+.card{
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    position: static;
+    display: inline-block;
+}
+
+.job{
+    color: rgb(62, 66, 70);
+    font-size: 20px;
+}
+
+.underJob{
+    font-size: 15px;
+}
+
+button{
+    border-radius: 50px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black
+            *{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./4d38m0.jpg);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100vh
+}
+
+.card{
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgba(201, 201, 201, 0.5);
+}
+
+.card_aboutme{
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgba(201, 201, 201, 0.5);
+}
+
+
+.card_contact{
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    margin-bottom: 100px;
+    background-color: rgba(201, 201, 201, 0.5);
+}
+
+.job{
+    color: rgb(62, 66, 70);
+    font-size: 20px;
+}
+
+.underJob{
+    font-size: 15px;
+}
+
+button{
+    border-radius: 50px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    background-color: rgb(58, 57, 57);
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+
+img{
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./IMG/Utiliser/bgcreateur.jpg);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100vh
+}
+
+.card {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    min-width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgba(201, 201, 201, 0.5);
+}
+
+.card_aboutme {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgba(201, 201, 201, 0.5);
+}
+
+
+.card_contact {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    margin-bottom: 100px;
+    background-color: rgba(201, 201, 201, 0.5);
+}
+
+.job {
+    color: rgb(62, 66, 70);
+    font-size: 20px;
+}
+
+.underJob {
+    font-size: 15px;
+}
+
+button {
+    border-radius: 50px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    background-color: rgb(58, 57, 57);
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+.Logo {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}

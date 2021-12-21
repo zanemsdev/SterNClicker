@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<script>
+	function update() {
+		document.title = Nstar + " Stars";
+		document.getElementById('text').value = Nstar;
+		document.getElementById('Nautoclickers').innerHTML = autoClicker;
+		document.getElementById('CoutAutoClickers').innerHTML = ((autoClicker + 1) * 25) + " Stars";
+		document.getElementById('Nmultiplicateur').innerHTML = Multiplicateur;
+		document.getElementById('CoutMultiplicateur').innerHTML = ((Multiplicateur + 1) * 250) + " Stars";
+	}
+
+	var Nstar = 0;
+	var autoClicker = 0;
+	var Multiplicateur = 1;
+
+	function timer() {
+		Nstar = Nstar + autoClicker * Multiplicateur * 2;
+		update()
+	}
+	setInterval(timer, 1000)
+</script>
+<html>
+
+<head>
+	<title>0 Star</title>
+	<link rel="stylesheet" type="text/css" href="Star.css">
+	<script src="https://kit.fontawesome.com/84a908751a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="all">
+		<div class="bottombar">
+
+		</div>
+		<div class="game">
+			<div class="Centre">
+				<div class="CentreClick">
+
+					<a href=# onclick="add()"><img src="./IMG/Utiliser/Star.png" height="437" width="465"></a>
+					<br><br><br>
+					Tu as:
+					<input type="text" id="text" disabled style=text-align:center>
+					<script>
+						function add() {
+							Nstar = Nstar + 1 * Multiplicateur * 2
+							update()
+						}
+					</script>
+					Stars
+
+				</div>
+			</div>
+			<div class="Gauche">
+				<div class="Upgrades">
+					<div onClick="AchatAutoClicker()" style="background-image:url(./IMG/Utiliser/mouse.png);"
+						class="Items">
+						<b>
+							"Auto Clicker - "
+							<p id="CoutAutoClickers">25 Stars</p>
+						</b>
+						<div id="Nautoclickers" class="N">0</div>
+					</div>
+					<div onClick="AchatMultiplicateur()"
+						style="background-image:url(./IMG/Utiliser/MULTIPLICATEURNoBackground2.png);" class="Items">
+						<b>
+							"Multiplicateur - "
+							<p id="CoutMultiplicateur">500 Stars</p>
+						</b>
+						<div id="Nmultiplicateur" class="N1">1</div>
+					</div>
+				</div>
+			</div>
+			<div class="Droite">
+				<div class="Option">
+
+				</div>
+			</div>
+			<div class="SeparateurGauche"></div>
+			<div class="SeparateurDroite"></div>
+
+			<div class="Discord">
+				<a href="https://discord.gg/q5EBWq9VgD"><i class="fab fa-discord"></i></a>
+			</div>
+
+			<div class="Saves">
+				<button><a href="createur.html" target="_BLANK">Créateur</button>
+				<button><a href="#" onClick="Sauvegarde()">Sauvegarder</button>
+				<button><a href="#" onClick="Charge()">Charger</button>
+			</div>
+
+
+
+			<script>
+				function Sauvegarde() {
+					localStorage.setItem("Nstar", Nstar);
+					localStorage.setItem("autoClicker", autoClicker);
+					localStorage.setItem("Multiplicateur", Multiplicateur);
+				}
+
+				function Charge() {
+					Nstar = localStorage.getItem("Nstar");
+					Nstar = parseInt(Nstar);
+					autoClicker = localStorage.getItem("autoClicker");
+					autoClicker = parseInt(autoClicker);
+					Multiplicateur = localStorage.getItem("Multiplicateur");
+					Multiplicateur = parseInt(Multiplicateur);
+					update()
+				}
+
+				function AchatAutoClicker() {
+					if (Nstar >= ((autoClicker + 1) * 25)) {
+						Nstar = Nstar - ((autoClicker + 1) * 25);
+						autoClicker = autoClicker + 1;
+						update()
+					}
+				}
+
+				function AchatMultiplicateur() {
+					if (Nstar >= ((Multiplicateur + 1) * 250)) {
+						Nstar = Nstar - ((Multiplicateur + 1) * 250);
+						Multiplicateur = Multiplicateur + 1;
+						update()
+					}
+				}
+			</script>
+
+		</div>
+	</div>
+
+
+</body>
+
+</html>

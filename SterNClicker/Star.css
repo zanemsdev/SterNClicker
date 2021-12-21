@@ -1,0 +1,140 @@
+/* COMMANTAIRE */
+
+body {
+	background-image: url("./IMG/Utiliser/bg.jpg");
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+	font-family: Comic Sans MS;
+}
+
+.Upgrades {
+	position: absolute;
+	left: 20px;
+	top: 10px;
+
+}
+
+.Upgrades>div {
+	background: #eee no-repeat;
+	width: 256px;
+	height: 64px;
+	padding-left: 72px;
+	cursor: pointer;
+	border: #000 2px solid;
+}
+
+.Upgrades>div:hover {
+	background-color: #fff;
+}
+
+.Upgrades>div:active {
+	background-color: #ccc;
+}
+
+.Upgrades>div b {
+	display: block;
+}
+
+.Upgrades>div.grayed {
+	background-color: #666;
+	color: #f00;
+}
+
+.Upgrades>div .N {
+	right: 8px;
+	top: 8px;
+	font-size: 48px;
+	color: #000;
+	opacity: 0.3;
+	position: absolute;
+}
+
+.Upgrades>div .N1 {
+	right: 8px;
+	top: 8px;
+	font-size: 48px;
+	color: #000;
+	opacity: 0.3;
+	position: absolute;
+}
+
+.Items {
+	display: block;
+	position: relative;
+}
+
+.Saves {
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+	text-decoration: none;
+	font-size: 15px;
+	color: #000;
+}
+
+.Discord {
+	position: fixed;
+	bottom: 0px;
+	left: 10px;
+	bottom: 10px;
+	font-size: 30px;
+	text-decoration: none;
+
+}
+
+.Gauche {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 30%;
+	bottom: 0px;
+	min-width: 100px;
+}
+
+.Centre {
+	position: absolute;
+	left: 30%;
+	padding-left: 16px;
+	margin-right: 15px;
+	top: 0px;
+	right: 30%;
+	bottom: 0px;
+	min-width: 100px;
+	overflow: hidden;
+}
+
+.CentreClick {
+	position: static;
+	text-align: center;
+}
+
+.Droite {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 30%;
+	bottom: 0px;
+	min-width: 100px;
+}
+
+.SeparateurGauche,
+.SeparateurDroite {
+	width: 16px;
+	height: 100%;
+	background: url(./IMG/Utiliser/SeparateurVertical.png) repeat-y;
+	background: url(./IMG/Utiliser/OmbreHaut.png) no-repeat top left, url(./IMG/Utiliser/OmbreBas.png) no-repeat bottom left, url(./IMG/Utiliser/SeparateurVertical.png) repeat-y;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	z-index: 100;
+}
+
+.SeparateurGauche {
+	left: 30%;
+}
+
+.SeparateurDroite {
+	right: 30%;
+}
